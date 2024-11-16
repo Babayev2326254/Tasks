@@ -31,7 +31,7 @@ public class weekplanertask {
         while (true) {
             System.out.println("Please, input the day of the week:");
             String day = scanner.nextLine().trim().toLowerCase();
-            String question = "Do you want to " + day + "change schedule (enter 'yes' or 'no')?";
+            String question =  "Do you want to "+day+"change schedule (enter 'yes' or 'no')?";
 
 
             if (day.equals("exit")) {
@@ -50,54 +50,26 @@ public class weekplanertask {
                 case "monday":
                     System.out.println("Your tasks for Monday: " + week[1][1]);
                     System.out.println(question);
-                    String yesOrNo = scanner.nextLine();
-                    if (yesOrNo.equals("yes")) {
-                        week[1][0] = scanner.nextLine().trim().toLowerCase();
-                    }
                     break;
                 case "tuesday":
                     System.out.println("Your tasks for Sunday: " + week[0][1]);
                     System.out.println(question);
-                    String yesOrNo = scanner.nextLine();
-                    if (yesOrNo.equals("yes")) {
-                        week[2][0] = scanner.nextLine().trim().toLowerCase();
-                    }
                     break;
-                String yesOrNo = scanner.nextLine();
-                if (yesOrNo.equals("yes")) {
-                    week[2][1] = scanner.nextLine().trim().toLowerCase();
-                }
                 case "wednesday":
                     System.out.println("Your tasks for Sunday: " + week[0][1]);
                     System.out.println(question);
-                    String yesOrNo = scanner.nextLine();
-                    if (yesOrNo.equals("yes")) {
-                        week[3][0] = scanner.nextLine().trim().toLowerCase();
-                    }
                     break;
                 case "thursday":
                     System.out.println("Your tasks for Sunday: " + week[0][1]);
                     System.out.println(question);
-                    String yesOrNo = scanner.nextLine();
-                    if (yesOrNo.equals("yes")) {
-                        week[4][0] = scanner.nextLine().trim().toLowerCase();
-                    }
                     break;
                 case "friday":
                     System.out.println("Your tasks for Sunday: " + week[0][1]);
                     System.out.println(question);
-                    String yesOrNo = scanner.nextLine();
-                    if (yesOrNo.equals("yes")) {
-                        week[5][0] = scanner.nextLine().trim().toLowerCase();
-                    }
                     break;
                 case "saturday":
                     System.out.println("Your tasks for Sunday: " + week[0][1]);
                     System.out.println(question);
-                    String yesOrNo = scanner.nextLine();
-                    if (yesOrNo.equals("yes")) {
-                        week[6][0] = scanner.nextLine().trim().toLowerCase();
-                    }
                     break;
                 default:
                     System.out.println("Sorry, I don't understand you, please try again.");
