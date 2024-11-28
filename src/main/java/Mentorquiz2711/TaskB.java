@@ -1,7 +1,5 @@
 package Mentorquiz2711;
 
-import java.util.Arrays;
-
 import java.util.Scanner;
 
 public class TaskB {
@@ -15,9 +13,9 @@ public class TaskB {
             array[i] = a;
         }
 
-        int c =0;
-        for (int j=1;j<array.length-1;j++){
-            if (array[j]>array[j+1] && array[j]>array[j-1]) {
+        int c = 0;
+        for (int j = 1; j < array.length - 1; j++) {
+            if (array[j] > array[j + 1] && array[j] > array[j - 1]) {
                 c++;
             }
         }
