@@ -17,6 +17,8 @@ public class MovieApp {
     }
 
 
+
+
     public void inputMoviesAndRatings() {
         System.out.println("Input 3 movies:");
         resizeMoviesArray(3);
@@ -28,6 +30,7 @@ public class MovieApp {
             movies[i] = new Movie(name, rating);
         }
     }
+
 
 
     public void inputMoreMoviesAndRatings() {
@@ -199,5 +202,6 @@ public class MovieApp {
                     System.out.println("Invalid choice. Please try again.");
             }
         } while (operand != 0);
+
     }
 }
